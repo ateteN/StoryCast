@@ -1,0 +1,28 @@
+.header {
+  background-color: $color-bg;
+  padding: $spacing-medium;
+
+  .header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: $spacing-small;
+    color: $text-color;
+    
+    span {
+      color: $color-accent;
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    gap: $spacing-large;
+
+    a {
+      color: $text-color;
+      font-weight: 500;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}

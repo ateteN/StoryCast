@@ -1,0 +1,32 @@
+.card {
+  background-color: $color-gray;
+  padding: $spacing-medium;
+  border-radius: none;
+  margin-bottom: $spacing-medium;
+
+  &.big {
+    a {
+      color: $color-text;
+    }
+
+    .card-readmore {
+      display: inline-block;
+      margin-top: $spacing-small;
+      color: $color-accent;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.small {
+    h4 a {
+      color: $color-text;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}

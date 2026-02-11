@@ -1,0 +1,45 @@
+.category {
+    h2 {
+        font-size: 2rem;
+        margin-bottom: $spacing-medium;
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  gap: $spacing-large;
+  padding: $spacing-large;
+}
+
+.category-big {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-medium;
+}
+
+.category-small {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-medium;
+}
+
+.sidebar section {
+  background-color: $color-gray;
+  padding: $spacing-medium;
+  border-radius: 5px;
+  margin-bottom: $spacing-medium;
+
+  h2 {
+    margin-bottom: $spacing-small;
+
+  }
+
+  a {
+    color: $color-text;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
