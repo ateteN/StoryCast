@@ -187,6 +187,7 @@ button {
 }
 .hero .hero-slide {
   width: 100%;
+  background-color: #111;
 }
 .hero .hero-slide figure {
   margin: 0;
@@ -224,7 +225,12 @@ button {
 }
 .hero .hero-slide figure figcaption h2 a {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+@media (max-width: 480px) {
+  .hero .hero-slide figure figcaption h2 a {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 768px) {
   .hero .hero-slide figure figcaption h2 a {
@@ -291,7 +297,7 @@ button {
 }
 @media (max-width: 768px) {
   .carousel .carousel-btn {
-    display: flex;
+    display: flex !important;
   }
 }
 .carousel .carousel-btn:hover {
@@ -791,12 +797,36 @@ button {
 .contact-section h1 {
   font-size: 2.5rem;
 }
+@media (max-width: 480px) {
+  .about-section h1,
+  .mission-section h1,
+  .accessibility-section h1,
+  .engagement-section h1,
+  .contact-section h1 {
+    font-size: 1.75rem;
+  }
+}
 .about-section h2,
 .mission-section h2,
 .accessibility-section h2,
 .engagement-section h2,
 .contact-section h2 {
   font-size: 1.8rem;
+}
+@media (max-width: 480px) {
+  .about-section h2,
+  .mission-section h2,
+  .accessibility-section h2,
+  .engagement-section h2,
+  .contact-section h2 {
+    font-size: 1.4rem;
+  }
+}
+.about-section h2,
+.mission-section h2,
+.accessibility-section h2,
+.engagement-section h2,
+.contact-section h2 {
   border-left: 5px solid #1e90ff;
   padding-left: 1rem;
 }

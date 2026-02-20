@@ -4,6 +4,7 @@
 
   .hero-slide {
     width: 100%;
+    background-color: #111; 
 
     figure {
       margin: 0;
@@ -39,7 +40,11 @@
 
         h2 a {
           color: #fff;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
+
+          @media (max-width: 480px) {
+            font-size: 1.1rem;
+          }
 
           @media (max-width: 768px) {
             font-size: 1.1rem;
