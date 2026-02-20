@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,24 @@
   <link rel="icon" href="images/icon (2).png" type="image/png">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
   <!-- HEADER -->
   <header class="header">
     <h1 class="header-title">Story<span>Cast</span></h1>
 
-    <nav class="nav" aria-label="Primary Navigation">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
       <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sitemap</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="story/story1.html">Featured Story</a></li>
       </ul>
     </nav>
   </header>
@@ -32,8 +38,9 @@
       <!-- Slide 1 -->
       <article class="hero-slide active">
         <figure>
-          <img src="https://images.unsplash.com/photo-1517866184231-7ef94c2ea930?q=80&w=1247&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt="Moon base concept art">
+          <img
+            src="https://images.unsplash.com/photo-1517866184231-7ef94c2ea930?q=80&w=1247&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Moon base concept art">
           <figcaption>
             <h2><a href="stories/story-moon.html">Elon Musk Planning to Build on the Moon?</a></h2>
           </figcaption>
@@ -43,10 +50,11 @@
       <!-- Slide 2 -->
       <article class="hero-slide">
         <figure>
-          <img src="images/moon-landing.jpg" 
-          alt="Moon landing conspiracy">
+          <img
+            src="https://images.unsplash.com/photo-1610483155766-e50e9774ad7f?q=80&w=1201&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Moon landing conspiracy">
           <figcaption>
-            <h2><a href="stories/story-landing.html">The Moon Landing Was Fake? Trending Social Media</a></h2>
+            <h2><a href="stories/story-landing.html">The Moon Landing Was Faked?</a></h2>
           </figcaption>
         </figure>
       </article>
@@ -54,10 +62,11 @@
       <!-- Slide 3 -->
       <article class="hero-slide">
         <figure>
-          <img src="images/mars.jpg" 
-          alt="Mars conspiracy theories">
+          <img
+            src="https://images.unsplash.com/photo-1555953816-7b9c0155b98a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Mars conspiracy theories">
           <figcaption>
-            <h2><a href="stories/story-mars.html">Secret Bases on Mars – What Governments Don't Tell You</a></h2>
+            <h2><a href="stories/story-mars.html">The concept of Time and why time travel is real</a></h2>
           </figcaption>
         </figure>
       </article>
@@ -71,56 +80,20 @@
     </section>
 
     <!-- TRENDING SECTION -->
-     <section class="trending" aria-labelledby="trending-heading">
+    <section class="trending" aria-labelledby="trending-heading">
       <h2 id="trending-heading">Trending Now</h2>
-      
+
       <div class="carousel">
-        <ul class="carousel-track">
+        <button class="carousel-btn carousel-prev" aria-label="Previous stories">&#8592;</button>
+        <button class="carousel-btn carousel-next" aria-label="Next stories">&#8594;</button>
+        <ul class="carousel-track" id="trending-track">
           <!-- Carousel Items -->
           <li class="carousel-item">
             <article>
               <a href="#" class="card-link">
                 <figure class="card-figure">
-                  <img src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Anna Korhonen presenting on Women in AI">
-                </figure>
-                <header>
-                  <h3 class="card-title">Women in AI: Anna Korhonen</h3>
-                </header>
-              </a>
-            </article>
-          </li>
-          <li class="carousel-item">
-            <article>
-              <a href="#" class="card-link">
-                <figure class="card-figure">
-                  <img src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Anna Korhonen presenting on Women in AI">
-                </figure>
-                <header>
-                  <h3 class="card-title">Women in AI: Anna Korhonen</h3>
-                </header>
-              </a>
-            </article>
-          </li>
-          <li class="carousel-item">
-            <article>
-              <a href="#" class="card-link">
-                <figure class="card-figure">
-                  <img src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Anna Korhonen presenting on Women in AI">
-                </figure>
-                <header>
-                  <h3 class="card-title">Women in AI: Anna Korhonen</h3>
-                </header>
-              </a>
-            </article>
-          </li>
-          <li class="carousel-item">
-            <article>
-              <a href="#" class="card-link">
-                <figure class="card-figure">
-                  <img src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                  <img
+                    src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Anna Korhonen presenting on Women in AI">
                 </figure>
                 <header>
@@ -129,10 +102,54 @@
               </a>
             </article>
           </li>
-          
-          </ul>
+          <li class="carousel-item">
+            <article>
+              <a href="#" class="card-link">
+                <figure class="card-figure">
+                  <img
+                    src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Anna Korhonen presenting on Women in AI">
+                </figure>
+                <header>
+                  <h3 class="card-title">Women in AI: Anna Korhonen</h3>
+                </header>
+              </a>
+            </article>
+          </li>
+          <li class="carousel-item">
+            <article>
+              <a href="#" class="card-link">
+                <figure class="card-figure">
+                  <img
+                    src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Anna Korhonen presenting on Women in AI">
+                </figure>
+                <header>
+                  <h3 class="card-title">Women in AI: Anna Korhonen</h3>
+                </header>
+              </a>
+            </article>
+          </li>
+          <li class="carousel-item">
+            <article>
+              <a href="#" class="card-link">
+                <figure class="card-figure">
+                  <img
+                    src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Anna Korhonen presenting on Women in AI">
+                </figure>
+                <header>
+                  <h3 class="card-title">Women in AI: Anna Korhonen</h3>
+                </header>
+              </a>
+            </article>
+          </li>
+
+        </ul>
       </div>
     </section>
+
+    <!-- CURRENT GRID CONTENT -->
 
     <!-- MAIN GRID CONTENT -->
     <section class="content-grid">
@@ -144,35 +161,75 @@
         <!-- Big cards -->
         <section class="category-big">
           <article class="card big">
-            <h3><a href="story-ai.html">AI Predicted Global Blackout</a></h3>
-            <p>Experts claim a global outage could happen in 2030. Some governments are preparing...</p>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&auto=format&fit=crop"
+                alt="AI concept">
+            </div>
+            <div class="card-body">
+              <h3><a href="story-ai.html">AI Predicted Global Blackout</a></h3>
+              <p>Experts claim a global outage could happen in 2030. Some governments are preparing...</p>
+            </div>
             <a class="card-readmore" href="story-ai.html">Read more</a>
           </article>
+
           <article class="card big">
-            <h3><a href="story-quantum.html">Quantum Internet Already Live?</a></h3>
-            <p>Insiders suggest the quantum internet is already in use by select institutions...</p>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&auto=format&fit=crop"
+                alt="Quantum computing">
+            </div>
+            <div class="card-body">
+              <h3><a href="story-quantum.html">Quantum Internet Already Live?</a></h3>
+              <p>Insiders suggest the quantum internet is already in use by select institutions...</p>
+            </div>
             <a class="card-readmore" href="story-quantum.html">Read more</a>
           </article>
+
           <article class="card big">
-            <h3><a href="story-mars.html">Secret Bases on Mars</a></h3>
-            <p>Satellite images reveal unusual structures on Mars. Are governments hiding something?</p>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=600&auto=format&fit=crop"
+                alt="Mars surface">
+            </div>
+            <div class="card-body">
+              <h3><a href="story-mars.html">Secret Bases on Mars</a></h3>
+              <p>Satellite images reveal unusual structures on Mars. Are governments hiding something?</p>
+            </div>
             <a class="card-readmore" href="story-mars.html">Read more</a>
           </article>
-        </section>
 
-        <!-- Small cards -->
-        <section class="category-small">
-          <article class="card small">
-            <h4><a href="#">Time Travel Patents Filed?</a></h4>
+          <article class="card big">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop"
+                alt="Space telescope">
+            </div>
+            <div class="card-body">
+              <h3><a href="story-moon.html">Moon Observatory Cover-Up?</a></h3>
+              <p>A leaked document hints at a secret deep-space telescope run by a shadow agency...</p>
+            </div>
+            <a class="card-readmore" href="story-moon.html">Read more</a>
           </article>
-          <article class="card small">
-            <h4><a href="#">Alien Signals Detected?</a></h4>
+
+          <article class="card big">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop"
+                alt="Circuit board technology">
+            </div>
+            <div class="card-body">
+              <h3><a href="story-chip.html">Mind-Control Chips Already Implanted?</a></h3>
+              <p>Whistleblowers claim a major tech firm has been secretly trialling neural chips...</p>
+            </div>
+            <a class="card-readmore" href="story-chip.html">Read more</a>
           </article>
-          <article class="card small">
-            <h4><a href="#">The Hidden Moon Colony?</a></h4>
-          </article>
-          <article class="card small">
-            <h4><a href="#">Mars Rover Hides Evidence?</a></h4>
+
+          <article class="card big">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600&auto=format&fit=crop"
+                alt="Deep space">
+            </div>
+            <div class="card-body">
+              <h3><a href="story-ufo.html">UFO Footage Declassified – What's Next?</a></h3>
+              <p>Governments worldwide are releasing previously classified footage. But why now?</p>
+            </div>
+            <a class="card-readmore" href="story-ufo.html">Read more</a>
           </article>
         </section>
       </section>
@@ -185,12 +242,24 @@
             <li><a href="#">New AI Conspiracy Leaks</a></li>
             <li><a href="#">Hidden Military Satellites</a></li>
             <li><a href="#">Top Trending Conspiracies 2026</a></li>
+            <li><a href="#">Secret Mars Base Documents</a></li>
+            <li><a href="#">Quantum Internet Goes Dark</a></li>
+            <li><a href="#">Moon Landing Debate Reignites</a></li>
+            <li><a href="#">Area 51 Whistleblower Speaks</a></li>
           </ul>
         </section>
 
         <section>
           <h2>Sponsored</h2>
-          <p>Ad space available here.</p>
+          <div class="sponsor-img">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&auto=format&fit=crop"
+              alt="NordVPN – Stay anonymous online">
+          </div>
+          <div class="sponsor-body">
+            <p><strong>NordVPN</strong> &mdash; Browse the web with ultimate privacy. Governments can&rsquo;t track you
+              when you&rsquo;re protected.</p>
+            <a href="#" class="sponsor-cta">Get 66% Off &rarr;</a>
+          </div>
         </section>
       </aside>
 
@@ -200,8 +269,103 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; 2026 StoryCast</p>
+    <div class="footer-grid">
+
+      <!-- Col 1: Branding -->
+      <div class="footer-col footer-brand">
+        <p class="footer-logo">Story<span>Cast</span></p>
+        <p>Your source for the stories governments don&rsquo;t want you to read. Uncensored. Unfiltered. Unstoppable.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="StoryCast on X (formerly Twitter)">&#120143;</a>
+          <a href="#" aria-label="StoryCast on Instagram">&#128247;</a>
+          <a href="#" aria-label="StoryCast on YouTube">&#127891;</a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="story/story1.html">Latest Story</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Newsletter -->
+      <div class="footer-col">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for weekly story drops, delivered to your inbox.</p>
+        <form class="footer-form" method="post" action="#">
+          <label for="footer-email" class="sr-only">Email address</label>
+          <input type="email" id="footer-email" placeholder="your@email.com" autocomplete="email">
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="footer-contact">Questions? <a href="mailto:hello@storycast.com">hello@storycast.com</a></p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 StoryCast &mdash; All rights reserved.</p>
+    </div>
   </footer>
 
+  <!-- JAVASCRIPT -->
+  <script>
+    // ── Mobile nav toggle ──────────────────────────────────────
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggleBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // ── Hero auto-play carousel ────────────────────────────────
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    let current = 0;
+    let timer;
+
+    function goToSlide(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function startAutoPlay() {
+      timer = setInterval(() => goToSlide(current + 1), 4500);
+    }
+
+    function resetAutoPlay() {
+      clearInterval(timer);
+      startAutoPlay();
+    }
+
+    // Dot clicks
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => { goToSlide(i); resetAutoPlay(); });
+    });
+
+    startAutoPlay();
+
+    // ── Trending carousel arrows ───────────────────────────────
+    const track = document.getElementById('trending-track');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+
+    function scrollByCard(direction) {
+      const item = track.querySelector('.carousel-item');
+      if (!item) return;
+      const itemWidth = item.offsetWidth + 20; // 20 = gap
+      track.scrollBy({ left: direction * itemWidth, behavior: 'smooth' });
+    }
+
+    prevBtn.addEventListener('click', () => scrollByCard(-1));
+    nextBtn.addEventListener('click', () => scrollByCard(1));
+  </script>
 </body>
+
 </html>

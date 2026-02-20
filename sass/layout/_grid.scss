@@ -1,45 +1,126 @@
 .category {
-    h2 {
-        font-size: 2rem;
-        margin-bottom: $spacing-medium;
-        color: $text-color;
-        font-weight: bold;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: $spacing-medium;
+    color: $text-color;
+    font-weight: bold;
+
+    @media (max-width: 480px) {
+      font-size: 1.5rem;
     }
+  }
 }
+
 .content-grid {
   display: grid;
-  grid-template-columns: 3fr 1fr; 
+  grid-template-columns: 3fr 1fr;
   gap: $spacing-large;
   padding: $spacing-large;
+
+  // Tablet: stack sidebar below content
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding: $spacing-medium;
+  }
 }
 
 .category-big {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: $spacing-medium;
+
+  // Tablet: 2 columns
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Mobile: 1 column
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .category-small {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: $spacing-medium;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .sidebar section {
-  background-color: $color-gray;
+  background-color: white;
+  border: 1px solid #e5e5e5;
   padding: $spacing-medium;
-  border-radius: 5px;
+  border-radius: 0;
   margin-bottom: $spacing-medium;
 
   h2 {
     margin-bottom: $spacing-small;
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
 
+  ul li {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0.45rem 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   a {
-    color: $color-text;
+    color: #222;
+    font-size: 0.9rem;
+
     &:hover {
       color: $color-accent;
+    }
+
+    &:visited {
+      color: #6b21a8;
+    }
+  }
+
+  // Sponsored block
+  .sponsor-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .sponsor-body {
+    p {
+      color: #333;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .sponsor-cta {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.9rem;
+      background-color: $color-accent;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.85;
+      }
     }
   }
 }

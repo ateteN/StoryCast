@@ -1,15 +1,45 @@
 .header {
   background-color: $color-bg;
   padding: $spacing-medium;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
   .header-title {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: $spacing-small;
     color: $text-color;
-    
+
     span {
       color: $color-accent;
+    }
+  }
+
+  // Hamburger button - hidden on desktop
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: $text-color;
+      border-radius: 2px;
+      transition: all 0.3s ease;
     }
   }
 
@@ -20,9 +50,48 @@
     a {
       color: $text-color;
       font-weight: 500;
+
       &:hover {
         color: $color-accent;
       }
+    }
+  }
+
+  // Tablet: reduce gap
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
+    }
+
+    .nav {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+
+      &.open {
+        max-height: 300px;
+      }
+    }
+
+    .nav-list {
+      flex-direction: column;
+      gap: 0;
+      padding: 0.5rem 0;
+
+      li a {
+        display: block;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid #eee;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // Mobile: smaller title
+  @media (max-width: 480px) {
+    .header-title {
+      font-size: 1.5rem;
     }
   }
 }
