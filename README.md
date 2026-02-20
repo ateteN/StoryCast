@@ -1,5 +1,7 @@
 # StoryCast – Digital Storytelling Platform
 
+![alt text](/assets/images/ReadmeScrrenshot.png)
+
 StoryCast is a high-impact, accessible digital storytelling platform dedicated to conspiracy narratives through audio documentaries and articles.
 
 ## Project Structure
