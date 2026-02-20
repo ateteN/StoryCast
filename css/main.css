@@ -195,11 +195,6 @@ button {
   overflow: hidden;
 }
 .hero .hero-slide {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 .hero .hero-slide figure {
@@ -237,7 +232,7 @@ button {
   }
 }
 .hero .hero-slide figure figcaption h2 a {
-  color: #222222;
+  color: #fff;
   font-size: 1.5rem;
 }
 @media (max-width: 768px) {
@@ -249,27 +244,6 @@ button {
   .hero .hero-slide figure figcaption h2 a {
     font-size: 0.95rem;
   }
-}
-.hero .hero-slide.active {
-  opacity: 1;
-  position: relative;
-}
-.hero .hero-indicators {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 1rem;
-}
-.hero .hero-indicators .hero-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #333333;
-}
-.hero .hero-indicators .hero-dot.active {
-  background-color: #1e90ff;
 }
 
 .trending {
@@ -306,6 +280,7 @@ button {
   position: relative;
 }
 .carousel .carousel-btn {
+  display: none;
   position: absolute;
   top: 38%;
   transform: translateY(-50%);
@@ -315,7 +290,6 @@ button {
   border-radius: 50%;
   width: 38px;
   height: 38px;
-  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -323,6 +297,11 @@ button {
   transition: background 0.2s ease;
   font-size: 1.1rem;
   color: #111;
+}
+@media (max-width: 768px) {
+  .carousel .carousel-btn {
+    display: flex;
+  }
 }
 .carousel .carousel-btn:hover {
   background-color: #1e90ff;
@@ -770,7 +749,7 @@ button {
   transition: box-shadow 0.3s ease;
 }
 .related-stories .related-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .related-stories .related-card .card-figure {
   width: 100%;
@@ -961,12 +940,20 @@ button {
 }
 
 @media (max-width: 768px) {
-  .nav {
-    max-height: none !important;
-    margin-top: 1rem;
-  }
   .nav-toggle {
-    display: none !important;
+    display: flex !important;
+  }
+  #nav-checkbox:checked ~ .nav {
+    max-height: 500px;
+  }
+  #nav-checkbox:checked ~ .nav-toggle span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #nav-checkbox:checked ~ .nav-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  #nav-checkbox:checked ~ .nav-toggle span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 

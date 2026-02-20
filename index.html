@@ -13,7 +13,7 @@
 
   <!-- HEADER -->
   <header class="header">
-    <h1 class="header-title">Story<span>Cast</span></h1>
+    <h1 class="header-title"><a href="index.html">Story<span>Cast</span></a></h1>
 
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
       <span></span>
@@ -33,50 +33,18 @@
   <main>
 
     <!-- HERO SECTION -->
-    <section class="hero" aria-label="Featured Stories">
-
-      <!-- Slide 1 -->
+    <section class="hero" aria-label="Featured Story">
       <article class="hero-slide active">
         <figure>
           <img
-            src="https://images.unsplash.com/photo-1517866184231-7ef94c2ea930?q=80&w=1247&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Moon base concept art">
-          <figcaption>
-            <h2><a href="stories/story-moon.html">Elon Musk Planning to Build on the Moon?</a></h2>
-          </figcaption>
-        </figure>
-      </article>
-
-      <!-- Slide 2 -->
-      <article class="hero-slide">
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1610483155766-e50e9774ad7f?q=80&w=1201&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/assets/images/NeildeGrasseTyson.png"
             alt="Moon landing conspiracy">
           <figcaption>
-            <h2><a href="stories/story-landing.html">The Moon Landing Was Faked?</a></h2>
+            <h2><a href="story/story1.html">Featured: Was the Moon Landing Faked? Neil Degrass Tyson on this Topic</a>
+            </h2>
           </figcaption>
         </figure>
       </article>
-
-      <!-- Slide 3 -->
-      <article class="hero-slide">
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1555953816-7b9c0155b98a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Mars conspiracy theories">
-          <figcaption>
-            <h2><a href="stories/story-mars.html">The concept of Time and why time travel is real</a></h2>
-          </figcaption>
-        </figure>
-      </article>
-
-      <!-- Hero sliders -->
-      <div class="hero-indicators">
-        <button class="hero-dot active" aria-label="Slide 1"></button>
-        <button class="hero-dot" aria-label="Slide 2"></button>
-        <button class="hero-dot" aria-label="Slide 3"></button>
-      </div>
     </section>
 
     <!-- TRENDING SECTION -->
@@ -149,7 +117,6 @@
       </div>
     </section>
 
-    <!-- CURRENT GRID CONTENT -->
 
     <!-- MAIN GRID CONTENT -->
     <section class="content-grid">
@@ -320,36 +287,6 @@
       const isOpen = nav.classList.toggle('open');
       toggleBtn.setAttribute('aria-expanded', isOpen);
     });
-
-    // ── Hero auto-play carousel ────────────────────────────────
-    const slides = document.querySelectorAll('.hero-slide');
-    const dots = document.querySelectorAll('.hero-dot');
-    let current = 0;
-    let timer;
-
-    function goToSlide(index) {
-      slides[current].classList.remove('active');
-      dots[current].classList.remove('active');
-      current = (index + slides.length) % slides.length;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
-    }
-
-    function startAutoPlay() {
-      timer = setInterval(() => goToSlide(current + 1), 4500);
-    }
-
-    function resetAutoPlay() {
-      clearInterval(timer);
-      startAutoPlay();
-    }
-
-    // Dot clicks
-    dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => { goToSlide(i); resetAutoPlay(); });
-    });
-
-    startAutoPlay();
 
     // ── Trending carousel arrows ───────────────────────────────
     const track = document.getElementById('trending-track');

@@ -13,14 +13,15 @@
 
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
+    <input type="checkbox" id="nav-checkbox" class="sr-only">
     <header class="header">
-        <p class="header-title">Story<span>Cast</span></p>
+        <p class="header-title"><a href="../index.html">Story<span>Cast</span></a></p>
 
-        <!-- <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <label for="nav-checkbox" class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav">
             <span></span>
             <span></span>
             <span></span>
-        </button> -->
+        </label>
 
         <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
             <ul class="nav-list">
@@ -49,13 +50,12 @@
 
                 <figure aria-describedby="media-caption">
                     <audio id="story-audio" controls aria-describedby="media-caption">
-                        <source src="../assets/Neil deGrasse Tyson Addresses Conspiracy Theory that Moon Landing was Fake (Part 11).mp3" type="audio/mpeg">
+                        <source
+                            src="../assets/Neil deGrasse Tyson Addresses Conspiracy Theory that Moon Landing was Fake (Part 11).mp3"
+                            type="audio/mpeg">
 
-                        <track kind="captions"
-                            src="../assets/transcripts/story1.vtt"
-                            srclang="en"
-                            label="English captions"
-                            default>
+                        <track kind="captions" src="../assets/transcripts/story1.vtt" srclang="en"
+                            label="English captions" default>
 
                         Your browser does not support HTML5 audio.
                         <a href="../assets/audio/story1.mp3">Download the audio file (MP3)</a>
@@ -63,9 +63,11 @@
                     </audio>
 
                     <figcaption id="media-caption">
-                        <strong>Listen:</strong> Neil deGrasse Tyson addressed the notion that the moon landing was 
-                        fake and why it would’ve been more difficult to fake the landing than actually landing on the moon. 
-                        To Neil, saying that the moon landing is fake can be taken as a compliment for the advancements in science. 
+                        <strong>Listen:</strong> Neil deGrasse Tyson addressed the notion that the moon landing was
+                        fake and why it would’ve been more difficult to fake the landing than actually landing on the
+                        moon.
+                        To Neil, saying that the moon landing is fake can be taken as a compliment for the advancements
+                        in science.
                     </figcaption>
                 </figure>
             </section>
@@ -74,17 +76,17 @@
             <section class="story-description" aria-labelledby="description-heading">
                 <h2 id="description-heading">About This Story</h2>
                 <p>
-                    In 1969, the world watched as humans first set foot on the Moon. 
-                    For many, it remains one of the greatest scientific achievements 
+                    In 1969, the world watched as humans first set foot on the Moon.
+                    For many, it remains one of the greatest scientific achievements
                     in history. Yet, decades later, questions and skepticism still linger.
                     Did it really happen exactly as we were told?
                 </p>
                 <p>
-                    In this StoryCast audio feature, we explore the debate surrounding 
-                    the Apollo 11 mission through the perspective of astrophysicist 
-                    <strong>Neil deGrasse Tyson</strong>. Responding to claims that the 
-                    Moon landing was staged, Tyson breaks down the science, logic, and 
-                    evidence behind one of the most persistent conspiracy theories of 
+                    In this StoryCast audio feature, we explore the debate surrounding
+                    the Apollo 11 mission through the perspective of astrophysicist
+                    <strong>Neil deGrasse Tyson</strong>. Responding to claims that the
+                    Moon landing was staged, Tyson breaks down the science, logic, and
+                    evidence behind one of the most persistent conspiracy theories of
                     modern times.
                 </p>
             </section>
@@ -254,4 +256,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -3,11 +3,6 @@
   overflow: hidden;
 
   .hero-slide {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
 
     figure {
@@ -33,7 +28,6 @@
         position: absolute;
         bottom: $spacing-large;
         left: $spacing-large;
-        // background: rgba(0, 0, 0, 0.6);
         padding: $spacing-medium;
         border-radius: 5px;
 
@@ -44,7 +38,7 @@
         }
 
         h2 a {
-          color: $color-text;
+          color: #fff;
           font-size: 1.5rem;
 
           @media (max-width: 768px) {
@@ -55,31 +49,6 @@
             font-size: 0.95rem;
           }
         }
-      }
-    }
-  }
-
-  .hero-slide.active {
-    opacity: 1;
-    position: relative;
-  }
-
-  .hero-indicators {
-    position: absolute;
-    bottom: $spacing-medium;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: $spacing-small;
-
-    .hero-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: $color-gray;
-
-      &.active {
-        background-color: $color-accent;
       }
     }
   }

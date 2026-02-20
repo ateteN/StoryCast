@@ -154,7 +154,7 @@
         transition: box-shadow 0.3s ease;
 
         &:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .card-figure {
@@ -346,12 +346,25 @@
 
 // Mobile 
 @media (max-width: 768px) {
-    .nav {
-        max-height: none !important; 
-        margin-top: $spacing-small;
+    .nav-toggle {
+        display: flex !important;
     }
 
-    .nav-toggle {
-        display: none !important; 
+    #nav-checkbox:checked~.nav {
+        max-height: 500px;
+    }
+
+    #nav-checkbox:checked~.nav-toggle {
+        span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        span:nth-child(2) {
+            opacity: 0;
+        }
+
+        span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
     }
 }
