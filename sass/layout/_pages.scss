@@ -154,7 +154,7 @@
         transition: box-shadow 0.3s ease;
 
         &:hover {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .card-figure {
@@ -350,11 +350,11 @@
         display: flex !important;
     }
 
-    #nav-checkbox:checked~.nav {
+    #nav-checkbox:checked~.header .nav {
         max-height: 500px;
     }
 
-    #nav-checkbox:checked~.nav-toggle {
+    #nav-checkbox:checked~.header .nav-toggle {
         span:nth-child(1) {
             transform: translateY(8px) rotate(45deg);
         }

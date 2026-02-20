@@ -32,9 +32,9 @@
 
   // Arrow buttons
   .carousel-btn {
-    display: none; 
+    display: none;
     position: absolute;
-    top: 38%; 
+    top: 38%;
     transform: translateY(-50%);
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.92);
@@ -51,7 +51,7 @@
     color: #111;
 
     @media (max-width: 768px) {
-      display: flex; 
+      display: flex;
     }
 
     &:hover {
@@ -153,9 +153,6 @@
       font-weight: 700;
       transition: color 0.3s ease;
 
-      &:visited {
-        color: #6b21a8;
-      }
     }
   }
 }
