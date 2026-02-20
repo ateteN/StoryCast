@@ -12,16 +12,7 @@
 </head>
 
 <body>
-
-    <!-- ═══════════════════════════════════════════════
-       SKIP LINK – keyboard / screen-reader users access
-       main content without tabbing through every nav item
-  ════════════════════════════════════════════════════ -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <!-- ═══════════════════════════════════════════════
-       HEADER
-  ════════════════════════════════════════════════════ -->
     <header class="header">
         <p class="header-title">Story<span>Cast</span></p>
 
@@ -39,16 +30,10 @@
             </ul>
         </nav>
     </header>
-
-    <!-- ═══════════════════════════════════════════════
-       MAIN CONTENT
-  ════════════════════════════════════════════════════ -->
     <main id="main-content">
 
         <!-- Story Article -->
         <article class="story-article" aria-labelledby="story-title">
-
-            <!-- ─── Story Header ────────────────────────────── -->
             <header class="story-header">
                 <h1 id="story-title">The Moon Landing Was Faked?</h1>
 
@@ -58,22 +43,15 @@
                 </p>
             </header>
 
-            <!-- ─── Media Section ──────────────────────────── -->
+            <!--Media Section  -->
             <section class="story-media" aria-labelledby="media-heading">
                 <h2 id="media-heading">Audio Documentary</h2>
 
                 <figure aria-describedby="media-caption">
                     <audio id="story-audio" controls aria-label="Audio documentary: The Moon Landing Was Faked?"
                         aria-describedby="media-caption">
-                        <!--
-              The <track> element below provides a WebVTT caption file.
-              Replace the src value with a real .vtt file when available.
-            -->
                         <track kind="captions" src="../media/story1-captions.vtt" srclang="en" label="English Captions"
                             default>
-                        <!--
-              Fallback for browsers that do not support the <audio> element.
-            -->
                         <p>
                             Your browser does not support HTML5 audio.
                             <a href="../media/story1.mp3">Download the audio file (MP3)</a>
@@ -89,7 +67,7 @@
                 </figure>
             </section>
 
-            <!-- ─── Story Description ──────────────────────── -->
+            <!-- Story Description -->
             <section class="story-description" aria-labelledby="description-heading">
                 <h2 id="description-heading">About This Story</h2>
 
@@ -118,7 +96,7 @@
                 </p>
             </section>
 
-            <!-- ─── Transcript Section ─────────────────────── -->
+            <!-- Transcript Section -->
             <section class="story-transcript" id="transcript" aria-labelledby="transcript-heading">
                 <h2 id="transcript-heading">Transcript</h2>
 
@@ -193,7 +171,7 @@
 
         </article>
 
-        <!-- ─── Related Stories ────────────────────────────── -->
+        <!-- Related Stories  -->
         <section class="related-stories" aria-labelledby="related-heading">
             <h2 id="related-heading">Related Stories</h2>
 
@@ -240,9 +218,7 @@
 
     </main>
 
-    <!-- ═══════════════════════════════════════════════
-       FOOTER
-  ════════════════════════════════════════════════════ -->
+    <!-- Footer-->
     <footer class="footer">
         <div class="footer-grid">
 

@@ -20,7 +20,7 @@
     }
   }
 
-  // Hamburger button - hidden on desktop
+  // Hamburger button 
   .nav-toggle {
     display: none;
     flex-direction: column;
@@ -57,7 +57,7 @@
     }
   }
 
-  // Tablet: reduce gap
+  // Tablet
   @media (max-width: 768px) {
     .nav-toggle {
       display: flex;
@@ -88,7 +88,7 @@
     }
   }
 
-  // Mobile: smaller title
+  // Mobile
   @media (max-width: 480px) {
     .header-title {
       font-size: 1.5rem;

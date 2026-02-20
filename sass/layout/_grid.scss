@@ -17,7 +17,7 @@
   gap: $spacing-large;
   padding: $spacing-large;
 
-  // Tablet: stack sidebar below content
+  // Tablet
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
     padding: $spacing-medium;
@@ -29,12 +29,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: $spacing-medium;
 
-  // Tablet: 2 columns
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  // Mobile: 1 column
+  // Mobile
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
   }

@@ -1,4 +1,4 @@
-// Story Detail Page Styles
+// Story Page Styles
 .story-article {
     max-width: 800px;
     margin: $spacing-large auto;
@@ -122,7 +122,7 @@
     }
 }
 
-// Related Stories Grid (matches layout in grid.scss but adapted for story page)
+// Related Stories Grid 
 .related-stories {
     max-width: 1200px;
     margin: $spacing-large auto;
@@ -187,7 +187,7 @@
     }
 }
 
-// About Page Styles
+// About Page 
 .about-section,
 .mission-section,
 .accessibility-section,
@@ -344,14 +344,14 @@
     }
 }
 
-// Mobile Nav Fallback (for pages without JS)
+// Mobile 
 @media (max-width: 768px) {
     .nav {
-        max-height: none !important; // Ensure nav is visible even if button doesn't work
+        max-height: none !important; 
         margin-top: $spacing-small;
     }
 
     .nav-toggle {
-        display: none !important; // Hide non-functional toggle on JS-free pages
+        display: none !important; 
     }
 }
